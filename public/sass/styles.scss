@@ -1,0 +1,47 @@
+@import './theme/default.scss';
+
+html {
+  font-family: 'Inter', sans-serif;
+
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -font-smoothing: antialiased;
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+:root{
+  --transparent: rgba(0, 0, 0, 0);
+  --white: rgba(255, 255, 255, 255);
+  --error: var(--text-highlight);
+
+  --border-radius-default: 8px;
+
+  --font-size-tiny: 10px;
+  --font-size-large: 36px; 
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+  font-size: 14px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+.notification-error {
+  background-color: var(--error);
+}

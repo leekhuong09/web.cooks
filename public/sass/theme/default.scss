@@ -1,0 +1,20 @@
+$color-1: #F3D1DC;
+$color-2: #F6A7C1;
+$color-3: #FCF0CF;
+$color-4: #FDCF76;
+$color-5: #B16E4B;
+
+[data-theme='default'] {
+    --primary-bg: #FDCF76;
+    --secondary-bg: #F3D1DC;
+    --sidebar-bg: #FCF0CF;
+    --header-bg: #FFFFFF;
+    --box-item-bg:#FCF0CF;
+    --text-primary: #B16E4B;
+    --text-secondary: #F3D1DC;
+    --text-highlight: #B16E4B;
+    --icon-primary: #B16E4B;
+    --icon-secondary: #FDCF76;
+    --border-primary: #FECCCB;
+    --gradient-primary: linear-gradient(180deg, #FDCF76 0%, #FCF0CF 100%);
+}
