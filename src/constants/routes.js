@@ -1,6 +1,10 @@
 const ROUTES = {
   home: { name: 'home', page: '/', pattern: '/' },
-  about: { name: 'about', page: '/about', pattern: '/about' },
+  category: {
+    name: 'category',
+    page: '/category',
+    pattern: '/chuyen-muc/:slug.:id(\\d+).html',
+  },
 };
 
 module.exports = ROUTES;

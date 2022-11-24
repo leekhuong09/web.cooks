@@ -45,3 +45,11 @@ input {
 .notification-error {
   background-color: var(--error);
 }
+
+a {
+  color: inherit;
+  text-decoration:unset;
+}
+a:hover {
+  color: var(--text-highlight);
+}

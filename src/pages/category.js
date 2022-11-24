@@ -1,21 +1,15 @@
 import React from 'react';
-import Link from 'next/link';
 import PropTypes from 'prop-types';
 
 import DefaultLayout from 'layouts/DefaultLayout';
 
 import { getMenu } from 'services/menu';
 
-const HomePage = ({ menu }) => {
-  return (
-    <DefaultLayout menu={menu}>
-      Welcome to Next.js!<Link href="/about">About Us</Link>
-    </DefaultLayout>
-  );
+const CategoryPage = ({ menu }) => {
+  return <DefaultLayout menu={menu}>Chuyên mục</DefaultLayout>;
 };
 
-HomePage.propTypes = {
-  data: PropTypes.any,
+CategoryPage.propTypes = {
   menu: PropTypes.array,
 };
 
@@ -26,4 +20,4 @@ export async function getServerSideProps() {
   return { props: { menu: res.data } };
 }
 
-export default HomePage;
+export default CategoryPage;

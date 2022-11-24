@@ -10,8 +10,8 @@ const nextConfig = {
         destination: ROUTES.home.page,
       },
       {
-        source: ROUTES.about.pattern,
-        destination: ROUTES.about.page,
+        source: ROUTES.category.pattern,
+        destination: ROUTES.category.page,
       },
     ];
   },
