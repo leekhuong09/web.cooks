@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.header`
   height: 80px;
-  width: 100%;
   background-color: var(--header-bg);
   display: flex;
   align-items: center;

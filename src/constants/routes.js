@@ -2,8 +2,13 @@ const ROUTES = {
   home: { name: 'home', page: '/', pattern: '/' },
   category: {
     name: 'category',
-    page: '/category',
-    pattern: '/chuyen-muc/:slug.:id(\\d+).html',
+    page: '/category/:slug/:id',
+    pattern: '/top-nhung-cach-lam-:slug-:id(\\d+).html',
+  },
+  recipe: {
+    name: 'recipe',
+    page: '/recipe/:slug/:id',
+    pattern: '/cach-lam-mon-:slug-:id(\\d+).html',
   },
 };
 

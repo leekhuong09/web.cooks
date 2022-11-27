@@ -14,6 +14,17 @@ Menu.Item = styled.div`
   margin-right: 20px;
 `;
 
-export const Content = styled.section`
+export const ContentWrapper = styled.section`
   padding: 40px calc((100% - 1024px) / 2);
+  display: flex;
+`;
+
+export const Content = styled.div`
+  flex: 1;
+  min-width: 0;
+`;
+
+export const Sidebar = styled.div`
+  width: 300px;
+  margin-left: 32px;
 `;

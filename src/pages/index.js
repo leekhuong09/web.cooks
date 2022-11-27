@@ -1,21 +1,23 @@
 import React from 'react';
-import Link from 'next/link';
 import PropTypes from 'prop-types';
+
+import DefaultBox from 'components/Box/DefaultBox';
 
 import DefaultLayout from 'layouts/DefaultLayout';
 
-import { getMenu } from 'services/menu';
+import { getMenu } from 'services';
 
 const HomePage = ({ menu }) => {
   return (
     <DefaultLayout menu={menu}>
-      Welcome to Next.js!<Link href="/about">About Us</Link>
+      <DefaultBox title="Hôm nay ăn gì?"></DefaultBox>
+      <DefaultBox title="Top món ăn được ưa yêu thích nhất"></DefaultBox>
+      <DefaultBox title="Món ăn mới ra lò"></DefaultBox>
     </DefaultLayout>
   );
 };
 
 HomePage.propTypes = {
-  data: PropTypes.any,
   menu: PropTypes.array,
 };
 
@@ -23,7 +25,7 @@ export async function getServerSideProps() {
   // Fetch data from external API
   const res = await getMenu();
   // Pass data to the page via props
-  return { props: { menu: res.data } };
+  return { props: { menu: res?.data } };
 }
 
 export default HomePage;

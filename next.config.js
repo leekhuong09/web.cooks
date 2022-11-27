@@ -13,6 +13,10 @@ const nextConfig = {
         source: ROUTES.category.pattern,
         destination: ROUTES.category.page,
       },
+      {
+        source: ROUTES.recipe.pattern,
+        destination: ROUTES.recipe.page,
+      },
     ];
   },
   publicRuntimeConfig: { DOMAIN_API, AUTH_TOKEN },

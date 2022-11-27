@@ -4,10 +4,11 @@ import PropTypes from 'prop-types';
 import { Link } from 'routes';
 
 import DefaultHeader from 'components/Header/DefaultHead';
+import DefaultBox from 'components/Box/DefaultBox';
 
-import { Wrapper, Menu, Content } from './styled';
+import { Wrapper, Menu, Content, ContentWrapper, Sidebar } from './styled';
 
-const DefaultLayout = ({ children, menu }) => {
+const DetailLayout = ({ children, menu }) => {
   return (
     <Wrapper>
       <DefaultHeader />
@@ -22,18 +23,24 @@ const DefaultLayout = ({ children, menu }) => {
             </Link>
           ))}
       </Menu>
-      <Content>{children}</Content>
+      <ContentWrapper>
+        <Content>{children}</Content>
+        <Sidebar>
+          <DefaultBox title="Nổi bật"></DefaultBox>
+          <DefaultBox title="Mới nhất"></DefaultBox>
+        </Sidebar>
+      </ContentWrapper>
     </Wrapper>
   );
 };
 
-DefaultLayout.defaultProps = {
+DetailLayout.defaultProps = {
   menu: [],
 };
 
-DefaultLayout.propTypes = {
+DetailLayout.propTypes = {
   children: PropTypes.any,
   menu: PropTypes.array,
 };
 
-export default DefaultLayout;
+export default DetailLayout;
