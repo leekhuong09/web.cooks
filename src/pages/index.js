@@ -11,6 +11,7 @@ const HomePage = ({ menu }) => {
   return (
     <DefaultLayout menu={menu}>
       <DefaultBox title="Hôm nay ăn gì?"></DefaultBox>
+      <DefaultBox title="Chuyên mục nổi bật"></DefaultBox>
       <DefaultBox title="Top món ăn được ưa yêu thích nhất"></DefaultBox>
       <DefaultBox title="Món ăn mới ra lò"></DefaultBox>
     </DefaultLayout>
